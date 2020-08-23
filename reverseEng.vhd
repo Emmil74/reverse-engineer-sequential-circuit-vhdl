@@ -3,14 +3,14 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 
 
-entity Assgt5a is
+entity reverseEng is
     Port ( clk : in  STD_LOGIC;
            reset : in  STD_LOGIC;
            a : in  STD_LOGIC;
            y : out  STD_LOGIC);
-end Assgt5a;
+end reverseEng;
 
-architecture Behavioral of Assgt5a is
+architecture Behavioral of reverseEng is
 type statetype is (state0, state1, state2, state3);
 signal state:statetype;
 
