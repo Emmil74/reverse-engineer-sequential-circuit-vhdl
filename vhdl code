@@ -13,10 +13,12 @@ end Assgt5a;
 architecture Behavioral of Assgt5a is
 type statetype is (state0, state1, state2, state3);
 signal state:statetype;
+
 begin
 process (clk, reset, a) begin 
 if (reset = '0') then state <= state0;
 elsif rising_edge(clk) then 
+
 case (state) is 
 when state0 =>
 if (a='0') then state <= state0;
